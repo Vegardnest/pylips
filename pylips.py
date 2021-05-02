@@ -25,7 +25,7 @@ session.mount('https://', requests.adapters.HTTPAdapter(pool_connections=1))
 secret_key="JCqdN5AcnAHgJYseUn7ER5k3qgtemfUvMRghQpTfTZq7Cvv8EPQPqfz6dDxPQPSu4gKFPWkJGw32zyASgJkHwCjU"
 
 parser = argparse.ArgumentParser(description="Control Philips TV API (versions 5 and 6)")
-parser.add_argument("--host", dest="host", help="TV's ip address")
+parser.add_argument("--host", dest="host", help="192.168.50.33")
 parser.add_argument("--user", dest="user", help="Username")
 parser.add_argument("--pass", dest="password", help="Password")
 parser.add_argument("--command", help="Command to run", default="")
